@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear Publicación</title>
+  <link rel="stylesheet" href="css/publicacion.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">DaZone</div>
+      <ul class="nav-links">
+        <li><a href="dashboard.html">Inicio</a></li>
+        <li><a href="crear-publicacion.html">Publicar</a></li>
+        <li><a href="busqueda.html">Buscar</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+        <li><a href="login.html">Salir</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="form-container">
+    <h2>Crear una nueva publicación</h2>
+    <form>
+      <label for="descripcion">Descripción:</label>
+      <textarea id="descripcion" name="descripcion" rows="5" placeholder="¿En qué estás pensando?..." required></textarea>
+
+      <label for="archivo">Subir archivo de música:</label>
+      <input type="file" id="archivo" name="archivo">
+
+      <button type="submit">Publicar</button>
+    </form>
+  </main>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>DaZone &copy; 2026</p>
+  </div>
+</footer>
+</body>
+</html>

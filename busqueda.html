@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/busqueda.css">
+  <title>Búsqueda Avanzada</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">DaZone</div>
+      <ul class="nav-links">
+        <li><a href="dashboard.html">Inicio</a></li>
+        <li><a href="crear-publicacion.html">Publicar</a></li>
+        <li><a href="busqueda.html">Buscar</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+        <li><a href="login.html">Salir</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="feed-container">
+    
+    <!-- Input del Buscador -->
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Buscar publicaciones por palabras clave o #hashtags...">
+    </div>
+
+    <!-- Mensaje cuando no hay coincidencias -->
+    <div id="noResults" class="no-results">
+      No se encontraron publicaciones que coincidan con tu búsqueda.
+    </div>
+
+    <!-- Lista de Publicaciones -->
+    <div id="postsList">
+
+      <article class="post-card">
+        <div class="post-header">
+          <div class="avatar">CR</div>
+          <div class="user-info">
+            <h4>Carlos Rodríguez</h4>
+            <span>Hace 2 horas</span>
+          </div>
+        </div>
+        <p class="post-content">Aprendiendo cómo crear un buscador sencillo con Javascript puro. ¡El desarrollo web frontend es increíble!</p>
+        <div class="post-tags">#javascript #programacion #web</div>
+      </article>
+
+      <article class="post-card">
+        <div class="post-header">
+          <div class="avatar">AL</div>
+          <div class="user-info">
+            <h4>Ana López</h4>
+            <span>Hace 4 horas</span>
+          </div>
+        </div>
+        <p class="post-content">Recomiendo mucho utilizar CSS Flexbox y Grid para hacer diseños responsivos tipo red social.</p>
+        <div class="post-tags">#css #design #frontend</div>
+      </article>
+
+      <article class="post-card">
+        <div class="post-header">
+          <div class="avatar">MG</div>
+          <div class="user-info">
+            <h4>Maria Gómez</h4>
+            <span>Ayer</span>
+          </div>
+        </div>
+        <p class="post-content">Diseñando la interfaz de usuario (UI) para un nuevo proyecto móvil. ¿Qué herramientas de diseño prefieren?</p>
+        <div class="post-tags">#ui #ux #design</div>
+      </article>
+
+    </div>
+
+  </div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>DaZone &copy; 2026</p>
+  </div>
+</footer>
+</body>
+</html>

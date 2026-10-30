@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="css/perfil.css"><title>Perfil de usuario | DaZone</title></head>
+<body><header><nav class="navbar"><div class="logo">DaZone</div><ul class="nav-links"><li><a href="dashboard.html">Inicio</a></li><li><a href="crear-publicacion.html">Publicar</a></li><li><a href="busqueda.html">Buscar</a></li><li><a href="perfil.html">Perfil</a></li><li><a href="login.html">Salir</a></li></ul></nav></header>
+<main class="profile-layout">
+<section class="container perfil-box">
+<img src="118592062_626580364951284_418017572890704428_n.jpg" alt="Foto de perfil" class="foto-perfil">
+<h1>Ricky Govea</h1><p class="username">@ricky_govea501</p><p class="bio">Amante de los autos, coleccionista de Hot Wheels y entusiasta de la tecnología.</p>
+<div class="profile-stats"><button id="followersButton"><strong>248</strong><span>Seguidores</span></button><button id="followingButton"><strong>180</strong><span>Siguiendo</span></button><div><strong>36</strong><span>Publicaciones</span></div></div>
+<div id="followersList" class="followers-list" hidden><h3>Seguidores recientes</h3><p>👤 Carlos Rodríguez <span>@carlos_dev</span></p><p>👤 Ana López <span>@ana.design</span></p><p>👤 María Gómez <span>@mariag</span></p></div>
+<div class="profile-buttons"><button class="primary-button" id="messageUser">✉ Enviar mensaje</button><button class="secondary-button" id="editProfile">Editar perfil</button></div>
+</section>
+<section id="chatPanel" class="container chat-panel" hidden>
+<div class="chat-heading"><div><h2>Chat personal</h2><p>Conversación con Ricky Govea</p></div><button id="closeChat" class="close-button" aria-label="Cerrar chat">×</button></div>
+<div class="chat-messages" id="chatMessages"><div class="message received"><span>¡Hola! Gracias por visitar mi perfil.</span><small>20:14</small></div><div class="message sent"><span>¡Hola, Ricky! Quería platicar contigo.</span><small>20:15</small></div></div>
+<form id="chatForm" class="chat-form"><input id="chatInput" name="message" placeholder="Escribe un mensaje..." autocomplete="off" required maxlength="500"><button type="submit">Enviar</button></form>
+<p class="demo-note">Demostración visual: los mensajes se mantienen en esta página mientras esté abierta.</p>
+</section>
+<section class="feed-container"><h2>Publicaciones de Ricky</h2><div id="postsList">
+<article class="post-card"><div class="post-header"><div class="avatar">RG</div><div class="user-info"><h4>Ricky Govea</h4><span>Hace 2 horas</span></div></div><p class="post-content">¿Qué prefieres: General Motors, Ford o Chrysler?</p><div class="post-tags">#autos #gm #ford #chrysler</div></article>
+<article class="post-card"><div class="post-header"><div class="avatar">RG</div><div class="user-info"><h4>Ricky Govea</h4><span>Hace 4 horas</span></div></div><p class="post-content">Actualmente, tengo contados oficialmente 331 carros Hot Wheels en mi colección (y estoy contando los que aún conservo despintados y desgastados).</p><div class="post-tags">#hotwheels #collector</div></article>
+<article class="post-card"><div class="post-header"><div class="avatar">RG</div><div class="user-info"><h4>Ricky Govea</h4><span>Ayer</span></div></div><p class="post-content">¿Qué les parece esta interfaz, es demasiado? 👀</p><div class="post-tags">#diseño #dudas</div></article>
+</div></section></main>
+<footer class="footer"><p>DaZone &copy; 2026</p></footer><script src="js/interacciones.js"></script></body></html>

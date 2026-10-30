@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/dashboard.css"><title>Dashboard | DaZone</title>
+</head>
+<body>
+<header><nav class="navbar"><div class="logo">DaZone</div><ul class="nav-links">
+<li><a href="dashboard.html">Inicio</a></li><li><a href="crear-publicacion.html">Publicar</a></li><li><a href="busqueda.html">Buscar</a></li><li><a href="perfil.html">Perfil</a></li><li><a href="login.html">Salir</a></li>
+</ul></nav></header>
+<main class="page-layout">
+<aside class="side-panel">
+<h2>Notificaciones <span class="notification-count" id="notificationCount">3</span></h2>
+<div id="notificationsList" class="notifications-list">
+<div class="notification unread"><span class="notice-icon">♥</span><p><strong>Ana López</strong> indicó que le gusta tu publicación.<small>Hace 10 min</small></p></div>
+<div class="notification unread"><span class="notice-icon">♧</span><p><strong>Carlos Rodríguez</strong> comenzó a seguirte.<small>Hace 35 min</small></p></div>
+<div class="notification"><span class="notice-icon">💬</span><p><strong>María Gómez</strong> comentó una publicación.<small>Ayer</small></p></div>
+</div>
+<button class="secondary-button" id="markRead">Marcar como leídas</button>
+</aside>
+<section class="feed-container">
+<h1 class="section-title">Tu comunidad</h1>
+<div id="postsList">
+<article class="post-card" data-likes="12">
+<div class="post-header"><div class="avatar">CR</div><div class="user-info"><h4>Carlos Rodríguez</h4><span>Hace 2 horas</span></div><button class="expand-button" aria-expanded="false">Ver publicación⌄</button></div>
+<p class="post-content">Aprendiendo cómo crear un buscador sencillo con Javascript puro. ¡El desarrollo web frontend es increíble!</p><div class="post-tags">#javascript #programacion #web</div>
+<div class="post-actions"><button class="like-button">♡ Me gusta <span class="like-count">12</span></button><button class="comment-toggle">💬 Comentar</button><button class="share-button">↗ Compartir</button></div>
+<div class="post-details" hidden><h4>Comentarios</h4><div class="comments-list"><div class="comment"><strong>Ana López</strong><p>¡Muy buen aporte! 🙌</p></div><div class="comment"><strong>María Gómez</strong><p>También estoy aprendiendo JavaScript.</p></div></div><form class="comment-form"><input name="comment" placeholder="Escribe un comentario..." required maxlength="300"><button type="submit">Enviar</button></form></div>
+</article>
+<article class="post-card" data-likes="8">
+<div class="post-header"><div class="avatar avatar-pink">AL</div><div class="user-info"><h4>Ana López</h4><span>Hace 4 horas</span></div><button class="expand-button" aria-expanded="false">Ver publicación⌄</button></div>
+<p class="post-content">Recomiendo mucho utilizar CSS Flexbox y Grid para hacer diseños responsivos tipo red social.</p><div class="post-tags">#css #design #frontend</div>
+<div class="post-actions"><button class="like-button">♡ Me gusta <span class="like-count">8</span></button><button class="comment-toggle">💬 Comentar</button><button class="share-button">↗ Compartir</button></div>
+<div class="post-details" hidden><h4>Comentarios</h4><div class="comments-list"><div class="comment"><strong>Carlos Rodríguez</strong><p>Grid es excelente para layouts.</p></div></div><form class="comment-form"><input name="comment" placeholder="Escribe un comentario..." required maxlength="300"><button type="submit">Enviar</button></form></div>
+</article>
+<article class="post-card" data-likes="21">
+<div class="post-header"><div class="avatar avatar-orange">MG</div><div class="user-info"><h4>María Gómez</h4><span>Ayer</span></div><button class="expand-button" aria-expanded="false">Ver publicación⌄</button></div>
+<p class="post-content">Diseñando la interfaz de usuario (UI) para un nuevo proyecto móvil. ¿Qué herramientas de diseño prefieren?</p><div class="post-tags">#ui #ux #design</div>
+<div class="post-actions"><button class="like-button">♡ Me gusta <span class="like-count">21</span></button><button class="comment-toggle">💬 Comentar</button><button class="share-button">↗ Compartir</button></div>
+<div class="post-details" hidden><h4>Comentarios</h4><div class="comments-list"></div><form class="comment-form"><input name="comment" placeholder="Escribe un comentario..." required maxlength="300"><button type="submit">Enviar</button></form></div>
+</article>
+</div></section></main>
+<footer class="footer"><p>DaZone &copy; 2026</p></footer>
+<script src="js/interacciones.js"></script></body></html>
